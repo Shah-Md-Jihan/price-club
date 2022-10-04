@@ -1,4 +1,5 @@
 import React from 'react';
+import AssignmentMark from '../AssignmentMarks/AssignmentMark';
 import PricingOption from '../PricingOption/PricingOption';
 
 const Pricing = () => {
@@ -15,7 +16,7 @@ const Pricing = () => {
             ]
         },
         {
-            id: 1, name: "medium", price: 9.99, feature: [
+            id: 2, name: "medium", price: 9.99, feature: [
                 'awsome feature',
                 'special feature',
                 'exclusive feature',
@@ -26,7 +27,7 @@ const Pricing = () => {
             ]
         },
         {
-            id: 1, name: "premium", price: 19.99, feature: [
+            id: 3, name: "premium", price: 19.99, feature: [
                 'awsome feature',
                 'special feature',
                 'exclusive feature',
@@ -45,6 +46,7 @@ const Pricing = () => {
                     options.map(option => <PricingOption key={option.id} option={option}></PricingOption>)
                 }
             </div>
+            <AssignmentMark></AssignmentMark>
         </div>
     );
 };
